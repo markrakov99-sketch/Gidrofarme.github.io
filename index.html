@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ГидроФерма - Свежая микрозелень</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}body{font-family:Arial;color:#2c3e50;background:#fff}.container{max-width:1200px;margin:0 auto;padding:0 20px}.avatar{width:100px;height:100px;background:#27ae60;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:40px;border:4px solid #fff;box-shadow:0 5px 15px rgba(39,174,96,0.3)}.header{background:#fff;padding:40px 0 30px;text-align:center;border-bottom:1px solid #e8f6ef}.header h1{font-size:2.5rem;color:#27ae60;margin-bottom:10px}.header p{color:#7f8c8d;font-size:1.1rem}.hero{background:#27ae60;color:#fff;padding:80px 0;text-align:center}.hero h2{font-size:2.5rem;margin-bottom:15px}.hero p{font-size:1.2rem;opacity:0.9}.cta-button{background:#fff;color:#27ae60;border:none;padding:12px 30px;font-size:1.1rem;border-radius:25px;cursor:pointer;margin-top:25px;font-weight:700}.products{padding:80px 0;background:#f8fff9}.products h2{text-align:center;margin-bottom:50px;font-size:2.2rem;color:#2c3e50}.product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}.product-card{background:#fff;padding:30px 25px;border-radius:15px;text-align:center;box-shadow:0 5px 20px rgba(0,0,0,0.1)}.product-card:hover{transform:translateY(-5px)}.product-icon{font-size:3rem;margin-bottom:20px}.product-card h3{color:#2c3e50;margin-bottom:15px;font-size:1.3rem}.product-card p{color:#7f8c8d;margin-bottom:20px}.price{font-size:1.3rem;font-weight:700;color:#27ae60;display:block;margin:15px 0}.order-btn{background:#ff6b00;color:#fff;border:none;padding:10px 20px;border-radius:20px;cursor:pointer;font-weight:700}.order-btn:hover{background:#e55a00}.contact{padding:80px 0;background:#2c3e50;color:#fff;text-align:center}.contact h2{margin-bottom:15px;font-size:2.2rem}.contact p{margin-bottom:40px;opacity:0.9}.contact-links{display:flex;justify-content:center;gap:20px;flex-wrap:wrap}.contact-btn{display:flex;align-items:center;gap:10px;background:#27ae60;color:#fff;padding:15px 25px;text-decoration:none;border-radius:10px;font-weight:500}.contact-btn:hover{background:#219653}.contact-btn.telegram{background:#0088cc}.contact-btn.instagram{background:#E4405F}.footer{background:#34495e;color:#fff;text-align:center;padding:40px 0}.footer p{margin:5px 0;opacity:0.8}@media (max-width:768px){.header h1,.hero h2{font-size:2rem}.product-grid,.contact-links{grid-template-columns:1fr;flex-direction:column;align-items:center}.contact-btn{width:250px;justify-content:center}}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="avatar">🌵</div>
+            <h1>ГидроФерма</h1>
+            <p>Свежая микрозелень с домашней гидропонной фермы</p>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Свежая зелень<br>выращенная с заботой</h2>
+            <p>Натурально • Без химии • С доставкой</p>
+            <button class="cta-button" onclick="scrollToProducts()">Смотреть ассортимент</button>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Наша продукция</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-icon">🌱</div>
+                    <h3>Микрозелень редиса</h3>
+                    <p>Острый вкус, богата витаминами</p>
+                    <span class="price">150₽ / порция</span>
+                    <button class="order-btn" onclick="orderProduct('Микрозелень редиса')">🛒 Заказать</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🌻</div>
+                    <h3>Микрозелень подсолнечника</h3>
+                    <p>Ореховый вкус. Популярен у ЗОЖ-аудитории</p><span class="price">180₽ / порция</span>
+                    <button class="order-btn" onclick="orderProduct('Микрозелень подсолнечника')">🛒 Заказать</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🥬</div>
+                    <h3>Салат Лолло-Россо</h3>
+                    <p>Хрустящий, красивый. Быстрый рост</p>
+                    <span class="price">220₽ / пучок</span>
+                    <button class="order-btn" onclick="orderProduct('Салат Лолло-Россо')">🛒 Заказать</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Сделать заказ</h2>
+            <p>Свяжитесь со мной удобным способом:</p>
+            <div class="contact-links">
+                <a href="https://t.me/ваш_telegram" class="contact-btn telegram">💬 Telegram</a>
+                <a href="https://instagram.com/ваш_instagram" class="contact-btn instagram">📸 Instagram</a>
+                <a href="tel:+79996528355" class="contact-btn phone">📞 +7 (999) 652-83-55</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 ГидроФерма. Выращено с заботой</p>
+            <p>Телефон: +7 (999) 652-83-55</p>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToProducts(){document.getElementById('products').scrollIntoView({behavior:'smooth',block:'start'})}
+        function orderProduct(e){window.open('https://t.me/share/url?text='+encodeURIComponent('Заказ: '+e),'_blank')}
+    </script>
+</body>
+</html>

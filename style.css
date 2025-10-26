@@ -1,0 +1,347 @@
+/* ОСНОВНЫЕ СТИЛИ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #2c3e50;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* АВАТАРКА */
+.avatar {
+    width: 100px;
+    height: 100px;
+    background: #27ae60;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+    font-size: 40px;
+    border: 4px solid white;
+    box-shadow: 0 5px 15px rgba(39, 174, 96, 0.3);
+}
+
+/* ШАПКА */
+.header {
+    background: white;
+    padding: 40px 0 30px 0;
+    text-align: center;
+    border-bottom: 1px solid #e8f6ef;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #27ae60;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+
+/* ГЛАВНЫЙ БАННЕР */
+.hero {
+    background: #27ae60;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.cta-button {
+    background: white;
+    color: #27ae60;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ПРОДУКЦИЯ */
+.products {
+    padding: 80px 0;
+    background: #f8fff9;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.2rem;
+    color: #2c3e50;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.product-card h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.product-card p {
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #27ae60;
+    display: block;
+    margin: 15px 0;
+}
+
+.order-btn {
+    background: #ff6b00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.order-btn:hover {
+    background: #e55a00;
+}
+
+/* ЭКОНОМИКА */
+.economics {
+    padding: 80px 0;
+    background: white;
+}
+
+.economics h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.2rem;
+    color: #2c3e50;
+}
+
+.money-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.money-card {
+    background: #f8fff9;
+    padding: 30px 25px;
+    border-radius: 15px;
+    border-left: 4px solid #27ae60;
+}
+
+.money-card h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.amount {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #27ae60;
+    margin: 15px 0;
+}
+
+.money-card ul {
+    list-style: none;
+}
+
+.money-card li {
+    margin: 10px 0;
+    color: #7f8c8d;
+}
+
+.fert-price {
+    font-weight: bold;
+    color: #27ae60;
+    margin-top: 15px;
+}
+
+/* ПРЕИМУЩЕСТВА */
+.benefits {
+    padding: 80px 0;
+    background: #f8fff9;
+}
+
+.benefits h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.2rem;
+    color: #2c3e50;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.benefit-card {
+    text-align: center;
+    padding: 30px 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.benefit-card h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.benefit-card p {
+    color: #7f8c8d;
+}
+
+/* КОНТАКТЫ */
+.contact {
+    padding: 80px 0;
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {margin-bottom: 15px;
+    font-size: 2.2rem;
+}
+
+.contact p {
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #27ae60;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.contact-btn:hover {
+    background: #219653;
+}
+
+.contact-btn.telegram {
+    background: #0088cc;
+}
+
+.contact-btn.instagram {
+    background: #E4405F;
+}
+
+.contact-btn.phone {
+    background: #27ae60;
+}
+
+/* ПОДВАЛ */
+.footer {
+    background: #34495e;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer p {
+    margin: 5px 0;
+    opacity: 0.8;
+}
+
+/* АДАПТИВНОСТЬ */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .money-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-btn {
+        width: 250px;
+        justify-content: center;
+    }
+}
